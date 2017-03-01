@@ -10,14 +10,21 @@
     <modules>
         <module>task_scheduler_domain</module>
         <module>task_scheduler_common</module>
+        <module>task_scheduler_core</module>
     </modules>
     <packaging>pom</packaging>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.batch</groupId>
-            <artifactId>spring-batch-core</artifactId>
-            <version>3.0.7.RELEASE</version>
-        </dependency>
-    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>4.3.6.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>dom4j</groupId>
+                <artifactId>dom4j</artifactId>
+                <version>1.6.1</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

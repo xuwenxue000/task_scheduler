@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id = "task_simple_test_1">
+    <root>
+        <params>
+            <param name="_appid">
+                <value>hello</value>
+                <type>OTHER</type>
+                <reg></reg>
+                <regMsg></regMsg>
+            </param>
+        </params>
+    </root>
+    <steps>
+        <step id="baidu_1" parentId="root">
+            <http>
+                <meta>
+                    <schema default="http">http</schema>
+                    <host>baidu.com</host>
+                    <method>GET</method>
+                </meta>
+                <url>/s</url>
+                <params>
+                    <param name="wd">hello</param>
+                </params>
+            </http>
+        </step>
+    </steps>
+</task>

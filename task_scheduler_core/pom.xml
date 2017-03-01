@@ -9,12 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>task_scheduler_domain</artifactId>
+    <artifactId>task_scheduler_core</artifactId>
+
     <dependencies>
         <dependency>
-            <groupId>com.william.xu</groupId>
-            <artifactId>task_scheduller_common</artifactId>
-            <version>1.0.0</version>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
         </dependency>
     </dependencies>
 
